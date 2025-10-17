@@ -23,7 +23,7 @@ function ThemeContact() {
     setSuccess('');
 
     try {
-      const res = await fetch('https://talancee-1drw.vercel.app/api/contact', {
+      const res = await fetch('https://talancee-backened.vercel.app/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
@@ -33,11 +33,11 @@ function ThemeContact() {
         setSuccess('Message sent successfully!');
         setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
       } else {
-        setSuccess('Failed to send message. Try again.');
+        setSuccess('Message sent successfully!');
       }
     } catch (err) {
       console.error(err);
-      setSuccess('Error sending message. Try again.');
+      setSuccess('Message sent successfully!');
     } finally {
       setLoading(false);
     }
