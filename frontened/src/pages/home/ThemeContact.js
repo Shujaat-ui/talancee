@@ -23,7 +23,7 @@ function ThemeContact() {
     setSuccess('');
 
     try {
-      const res = await fetch('http://localhost:5000/contact', {
+      const res = await fetch('https://talancee-1drw.vercel.app/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
