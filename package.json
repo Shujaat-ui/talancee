@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "contact-backend",
   "version": "1.0.0",
   "description": "",
@@ -21,5 +22,10 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
+=======
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "react-icons": "^5.5.0"
+>>>>>>> 688abf84fd3b673e31fb963f50fa05c78a82fb6b
   }
 }

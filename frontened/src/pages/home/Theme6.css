@@ -1,0 +1,73 @@
+.faq-section {
+  width: 100%;
+  padding: 6rem 0; /* remove horizontal padding */
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  color: #111; /* black text by default */
+}
+
+.faq-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: calc(100% - 30px); /* full width minus 15px margin each side */
+  margin: 0 15px; /* extreme left and right */
+  gap: 2rem;
+}
+
+.faq-left {
+  flex: 1;
+  padding-right: 15rem;
+}
+
+.faq-left h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.faq-left p {
+  font-size: 2rem;
+  color: #111;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.faq-right {
+  flex: 1.5;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 700; /* make questions bold */
+  color: #111; /* black text */
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.faq-question:hover {
+  color: #000; /* keep hover black */
+}
+
+.faq-toggle {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.faq-answer {
+  margin-top: 0.5rem;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+hr {
+  border: 0.5px solid #ccc;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,115 @@
+.theme8-section {
+  width: 100%;
+  padding: 8rem 2rem;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.theme8-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1600px;
+}
+
+/* Each card */
+.theme8-card {
+  position: relative;
+  background-color: #111;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0;
+  flex: 1 1 480px;
+  min-height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Black overlay to make text readable */
+.theme8-overlay {
+  background: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background 0.4s ease;
+}
+
+.theme8-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.45);
+}
+
+.theme8-card:hover .theme8-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* User info */
+.theme8-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.theme8-avatar {
+  font-size: 3.5rem;
+  color: #bbb;
+  margin-right: 1.2rem;
+}
+
+.theme8-author p {
+  font-size: 1rem;
+  color: #aaa;
+  margin: 0;
+}
+
+.theme8-author span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Post title (uppercase now) */
+.theme8-card h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+/* Post description */
+.theme8-desc {
+  font-size: 1.1rem;
+  color: #ddd;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .theme8-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .theme8-card {
+    width: 95%;
+    min-height: 400px;
+  }
+
+  .theme8-overlay {
+    padding: 3rem 2rem;
+  }
+}
