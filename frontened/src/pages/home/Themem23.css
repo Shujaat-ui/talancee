@@ -1,0 +1,214 @@
+/* ===============================
+   SECTION BASE
+================================ */
+.theme23-section {
+  width: 100%;
+  max-width: none;         
+  margin: 0;
+  padding: 6rem 0;              /* ✅ No side padding, table full width */
+  background-color: #fff;       /* ✅ Pure white background */
+  color: #111;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* ===============================
+   HEADER
+================================ */
+.theme23-header {
+  margin-bottom: 4rem;
+  padding: 0 2rem;
+}
+
+.theme23-icon {
+  font-size: 4rem;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.theme23-header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.theme23-header p {
+  font-size: 1.3rem;
+  color: #444;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ===============================
+   SERVICES TABLE
+================================ */
+.theme23-services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+/* One row = one table row */
+.theme23-row {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+  padding: 2rem 5rem;              /* ✅ Wider padding for expanded look */
+  border-bottom: 1px solid #eee;   /* ✅ Light table border */
+  background: #fff;               /* ✅ Keep rows white */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.theme23-row:last-child {
+  border-bottom: none;
+}
+
+.theme23-row:hover {
+  background: #fff;               /* ✅ No grey hover */
+  transform: translateX(5px);     /* Optional slight slide effect */
+}
+
+/* ===============================
+   COLUMNS
+================================ */
+.theme23-number {
+  flex: 0.1;
+  min-width: 80px;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.theme23-title {
+  flex: 0.5;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.theme23-description {
+  flex: 1;
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  max-width: none;
+}
+
+/* ===============================
+   ICON (Below Description in Circle)
+================================ */
+.theme23-icon-circle {
+  margin-top: 1rem;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.theme23-icon-circle:hover {
+  background-color: #ff5e00;
+  transform: scale(1.1);
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================ */
+@media (max-width: 900px) {
+  .theme23-section {
+    padding: 4rem 1rem;
+  }
+
+  .theme23-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .theme23-number {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .theme23-title {
+    font-size: 1.4rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .theme23-description {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .theme23-icon-circle {
+    margin: 1rem auto 0;
+  }
+
+  .theme23-header h1 {
+    font-size: 2rem;
+  }
+
+  .theme23-header p {
+    font-size: 1rem;
+  }
+}
+
+/* ===============================
+   OPTIONAL: Remove horizontal scroll
+================================ */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+/* ===============================
+   ICON RIGHT — BIG CIRCLE STYLE
+================================ */
+.theme23-icon-right {
+  flex: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+  
+  /* 🟠 Circle size — isko aap badha/ghata sakte ho */
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  /* 🎨 Circle background & icon color */
+  background-color: #111;
+  color: #fff;
+
+  /* 🧭 Icon size */
+  font-size: 2rem;
+
+  /* ✨ Animation & smooth hover */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.theme23-icon-right:hover {
+  background-color: #ff5e00;   /* hover color */
+  transform: scale(1.1) rotate(10deg);
+}
+

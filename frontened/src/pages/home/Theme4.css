@@ -1,0 +1,71 @@
+.theme4-section {
+  width: 100%;
+  padding: 6rem 2rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.theme4-section h1 {
+  font-size: 2.5rem; /* bigger heading */
+  font-weight: 700;
+  margin-bottom: 5rem;
+  color: #111;
+}
+
+/* Container for horizontal circles */
+.tech-circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: -100px; /* big negative gap for default intersection */
+  flex-wrap: wrap;
+}
+
+/* Each tech circle */
+.tech-circle {
+  width: 300px; /* bigger circle */
+  height: 300px;
+  background-color: #fff;
+  border: 2px solid #ccc; /* light black border */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem; /* bigger icon */
+  z-index: 1;
+  transition: transform 0.3s, z-index 0.3s;
+}
+
+/* Make hovered circle pop above others */
+.tech-circle:hover {
+  transform: scale(1.2);
+  z-index: 10;
+  border-color: #000;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .tech-circles {
+    gap: -60px;
+  }
+  .tech-circle {
+    width: 200px;
+    height: 200px;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-circles {
+    gap: -30px;
+  }
+  .tech-circle {
+    width: 120px;
+    height: 120px;
+    font-size: 1.8rem;
+  }
+}

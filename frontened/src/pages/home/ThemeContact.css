@@ -1,0 +1,211 @@
+.contact-section {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 6rem 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+}
+
+/* ===============================
+   TOP HEADING & PARAGRAPH
+================================ */
+.contact-top {
+  display: flex;
+  justify-content: space-between; /* push heading left, paragraph right */
+  align-items: flex-start;
+  flex-wrap: nowrap; /* prevent wrapping */
+  margin-bottom: 4rem;
+}
+
+.contact-heading {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+  flex: none; /* remove width restriction */
+  text-align: left; /* ensure left alignment */
+}
+
+.contact-paragraph {
+  font-size: 1.4rem;
+  margin: 0;
+  flex: none; /* remove width restriction */
+  text-align: right; /* keep flush right */
+  line-height: 1.6;
+}
+
+
+/* ===============================
+   BOTTOM ROW: INFO + FORM
+================================ */
+.contact-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* LEFT INFO */
+.contact-info {
+  flex: 1 1 45%;
+  text-align: left; /* force left alignment */
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: left; /* ensure heading is left-aligned */
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: left; /* ensure paragraphs are left-aligned */
+}
+
+/* RIGHT FORM */
+.contact-form {
+  flex: 1 1 45%;
+  background: #f9f9f9; /* light card background */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  resize: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff5e00;
+  box-shadow: 0 0 5px rgba(255,94,0,0.4);
+  outline: none;
+}
+
+.contact-form button {
+  padding: 1rem;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #ff5e00;
+  transform: scale(1.05);
+}
+
+/* Success message */
+.form-success {
+  margin-top: 0.5rem;
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .contact-top {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .contact-paragraph {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .contact-bottom {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-info
+   {
+    flex: 1 1 100%;
+  }
+
+ .contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-row input {
+  flex: 1; /* equal width for both inputs in a row */
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  resize: vertical;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:disabled {
+ 
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.form-success {
+  color: green;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+}

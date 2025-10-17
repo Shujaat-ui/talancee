@@ -1,0 +1,73 @@
+.theme7-section {
+  width: 100%;
+  padding: 8rem 2rem;
+  background-color: #fff; /* white section background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.theme7-content {
+  text-align: center;
+  background-color: #111; /* black box */
+  padding: 8rem 4rem;
+  max-width: 2900px;
+  width: 99%;
+  min-height: 450px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Big heading */
+.theme7-content h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+/* CTA text link */
+.cta {
+  display: inline-block; /* ensures only text width */
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 4px;
+}
+
+/* Underline matches text width perfectly */
+.cta::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  transform: scaleX(1);
+}
+
+/* On hover — shrink underline smoothly */
+.cta:hover::after {
+  transform: scaleX(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .theme7-content h1 {
+    font-size: 2rem;
+  }
+
+  .cta {
+    font-size: 1rem;
+  }
+}
