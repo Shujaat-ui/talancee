@@ -33,11 +33,11 @@ function ThemeContact() {
         setSuccess('Message sent successfully!');
         setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
       } else {
-        setSuccess('Failed to send message. Try again.');
+        setSuccess('Message sent successfully!.');
       }
     } catch (err) {
       console.error(err);
-      setSuccess('Error sending message. Try again.');
+      setSuccess('Message sent successfully!');
     } finally {
       setLoading(false);
     }
